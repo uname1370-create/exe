@@ -1,0 +1,469 @@
+﻿================================================================
+ Application.dll  -  STATIC ANALYSIS REPORT
+ File: Application.dll  (UPX-packed -> unpacked for analysis)
+ Packer : UPX  (sections UPX0/UPX1)
+ IMAGE  : PE32 / i386 (0x014C), 3 sections, NOT SIGNED
+ Author : ex-hacks.com  (Elementary Hack v2.1)
+================================================================
+
+--- SECTIONS (after unpack) ---
+CODE  .text   vsize 0x7f680
+DATA  .data   vsize 0x266c
+BSS   .bss    vsize 0x9c89
+.idata         vsize 0x2236
+.reloc         vsize 0xaa48
+.rsrc          vsize 0x5400
+
+--- EXPORTS ---
+(none - injected as module, not exported)
+
+--- REMOTE ENDPOINTS (C2 / update server) ---
+http://ex-hacks.com/elementaryhack/v21_2/credits.s
+http://ex-hacks.com/elementaryhack/v21_2/update.s
+http://ex-hacks.com/elementaryhack/v21_2/cmd_console.s
+http://ex-hacks.com/elementaryhack/v21_2/cmd_clientcmd.s
+http://ex-hacks.com/elementaryhack/v21_2/cmd_systemcmd.s
+http://ex-hacks.com/elementaryhack/v21_2/black.php
+http://ex-hacks.com/elementaryhack/v21_2/userinfo.php
+http://ex-hacks.com/elementaryhack/v21_2/stats.php
+http://ex-hacks.com/elementaryhack/v21_2/dwn_getfile.s
+http://ex-hacks.com/elementaryhack/v21_2/restore/settings.rsr
+http://ex-hacks.com/elementaryhack/v21_2/restore/commands.rsr
+
+--- NETWORK STACK (Indy / Delphi) ---
+WS2_32.DLL, IdHTTP, IdTCPConnection, IdSocketHandle,
+BasicAuthentication, TIdSSLVerifyMode, libeay32.dll, ssleay32.dll (OpenSSL)
+
+--- TARGET GAME FILES ---
+hl.exe, hw.dll, client.dll, non-steam, steam
+
+================================================================
+ FULL IMPORT LIST (per DLL)
+================================================================
+=== SECTIONS ===
+CODE vsize 0x7f680 raw 0x7f800
+DATA vsize 0x266c raw 0x2800
+BSS vsize 0x9c89 raw 0x0
+.idata vsize 0x2236 raw 0x2400
+.reloc vsize 0xaa48 raw 0xac00
+.rsrc vsize 0x5400 raw 0x5400
+
+=== EXPORTS ===
+(none)
+
+=== IMPORTS ===
+
+[KERNEL32.DLL] (83)
+    lstrcpyA
+    WritePrivateProfileStringA
+    WriteFile
+    WinExec
+    WaitForSingleObject
+    VirtualQuery
+    VirtualProtect
+    VirtualAlloc
+    Sleep
+    SizeofResource
+    SetThreadLocale
+    SetFilePointer
+    SetEvent
+    SetErrorMode
+    SetEndOfFile
+    ResumeThread
+    ResetEvent
+    ReadFile
+    QueryPerformanceFrequency
+    QueryPerformanceCounter
+    OpenMutexA
+    MulDiv
+    LockResource
+    LoadResource
+    LoadLibraryA
+    LeaveCriticalSection
+    InitializeCriticalSection
+    GlobalUnlock
+    GlobalReAlloc
+    GlobalHandle
+    GlobalLock
+    GlobalFree
+    GlobalFindAtomA
+    GlobalDeleteAtom
+    GlobalAlloc
+    GlobalAddAtomA
+    GetVolumeInformationA
+    GetVersionExA
+    GetVersion
+    GetTimeZoneInformation
+    GetTickCount
+    GetThreadLocale
+    GetTempPathA
+    GetSystemInfo
+    GetStringTypeExA
+    GetStdHandle
+    GetProcAddress
+    GetPrivateProfileStringA
+    GetModuleHandleA
+    GetModuleFileNameA
+    GetLocaleInfoA
+    GetLocalTime
+    GetLastError
+    GetFullPathNameA
+    GetFileSize
+    GetExitCodeThread
+    GetDiskFreeSpaceA
+    GetDateFormatA
+    GetCurrentThreadId
+    GetCurrentProcessId
+    GetCPInfo
+    GetACP
+    FreeResource
+    InterlockedIncrement
+    InterlockedExchange
+    InterlockedDecrement
+    FreeLibrary
+    FormatMessageA
+    FindResourceA
+    FindFirstFileA
+    FindClose
+    FileTimeToLocalFileTime
+    FileTimeToDosDateTime
+    EnumCalendarInfoA
+    EnterCriticalSection
+    DeleteFileA
+    DeleteCriticalSection
+    CreateThread
+    CreateMutexA
+    CreateFileA
+    CreateEventA
+    CompareStringA
+    CloseHandle
+
+[KERNEL32.DLL] (1)
+    Sleep
+
+[KERNEL32.DLL] (6)
+    TlsSetValue
+    TlsGetValue
+    TlsFree
+    TlsAlloc
+    LocalFree
+    LocalAlloc
+
+[KERNEL32.DLL] (38)
+    DeleteCriticalSection
+    LeaveCriticalSection
+    EnterCriticalSection
+    InitializeCriticalSection
+    VirtualFree
+    VirtualAlloc
+    LocalFree
+    LocalAlloc
+    GetTickCount
+    QueryPerformanceCounter
+    GetVersion
+    GetCurrentThreadId
+    InterlockedDecrement
+    InterlockedIncrement
+    VirtualQuery
+    WideCharToMultiByte
+    MultiByteToWideChar
+    lstrlenA
+    lstrcpynA
+    LoadLibraryExA
+    GetThreadLocale
+    GetStartupInfoA
+    GetProcAddress
+    GetModuleHandleA
+    GetModuleFileNameA
+    GetLocaleInfoA
+    GetCommandLineA
+    FreeLibrary
+    FindFirstFileA
+    FindClose
+    ExitProcess
+    ExitThread
+    CreateThread
+    WriteFile
+    UnhandledExceptionFilter
+    RtlUnwind
+    RaiseException
+    GetStdHandle
+
+[advapi32.dll] (3)
+    RegQueryValueExA
+    RegOpenKeyExA
+    RegCloseKey
+
+[advapi32.dll] (3)
+    RegQueryValueExA
+    RegOpenKeyExA
+    RegCloseKey
+
+[comctl32.dll] (23)
+    ImageList_SetIconSize
+    ImageList_GetIconSize
+    ImageList_Write
+    ImageList_Read
+    ImageList_GetDragImage
+    ImageList_DragShowNolock
+    ImageList_SetDragCursorImage
+    ImageList_DragMove
+    ImageList_DragLeave
+    ImageList_DragEnter
+    ImageList_EndDrag
+    ImageList_BeginDrag
+    ImageList_Remove
+    ImageList_DrawEx
+    ImageList_Draw
+    ImageList_GetBkColor
+    ImageList_SetBkColor
+    ImageList_ReplaceIcon
+    ImageList_Add
+    ImageList_SetImageCount
+    ImageList_GetImageCount
+    ImageList_Destroy
+    ImageList_Create
+
+[gdi32.dll] (54)
+    UnrealizeObject
+    StretchBlt
+    SetWindowOrgEx
+    SetViewportOrgEx
+    SetTextColor
+    SetStretchBltMode
+    SetROP2
+    SetPixel
+    SetDIBColorTable
+    SetBrushOrgEx
+    SetBkMode
+    SetBkColor
+    SelectPalette
+    SelectObject
+    SaveDC
+    RestoreDC
+    RectVisible
+    RealizePalette
+    PatBlt
+    MoveToEx
+    MaskBlt
+    LineTo
+    IntersectClipRect
+    GetWindowOrgEx
+    GetTextMetricsA
+    GetTextExtentPoint32A
+    GetSystemPaletteEntries
+    GetStockObject
+    GetPixel
+    GetPaletteEntries
+    GetObjectA
+    GetDeviceCaps
+    GetDIBits
+    GetDIBColorTable
+    GetDCOrgEx
+    GetCurrentPositionEx
+    GetClipBox
+    GetBrushOrgEx
+    GetBitmapBits
+    ExcludeClipRect
+    DeleteObject
+    DeleteDC
+    CreateSolidBrush
+    CreatePenIndirect
+    CreatePalette
+    CreateHalftonePalette
+    CreateFontIndirectA
+    CreateDIBitmap
+    CreateDIBSection
+    CreateCompatibleDC
+    CreateCompatibleBitmap
+    CreateBrushIndirect
+    CreateBitmap
+    BitBlt
+
+[oleaut32.dll] (8)
+    SafeArrayPtrOfIndex
+    SafeArrayGetUBound
+    SafeArrayGetLBound
+    SafeArrayCreate
+    VariantChangeType
+    VariantCopy
+    VariantClear
+    VariantInit
+
+[oleaut32.dll] (3)
+    SysFreeString
+    SysReAllocStringLen
+    SysAllocStringLen
+
+[shell32.dll] (1)
+    ShellExecuteA
+
+[user32.dll] (157)
+    CreateWindowExA
+    mouse_event
+    WindowFromPoint
+    WinHelpA
+    WaitMessage
+    UpdateWindow
+    UnregisterClassA
+    UnhookWindowsHookEx
+    TranslateMessage
+    TranslateMDISysAccel
+    TrackPopupMenu
+    SystemParametersInfoA
+    ShowWindow
+    ShowScrollBar
+    ShowOwnedPopups
+    ShowCursor
+    SetWindowsHookExA
+    SetWindowPos
+    SetWindowPlacement
+    SetWindowLongA
+    SetTimer
+    SetScrollRange
+    SetScrollPos
+    SetScrollInfo
+    SetRect
+    SetPropA
+    SetParent
+    SetMenuItemInfoA
+    SetMenu
+    SetForegroundWindow
+    SetFocus
+    SetCursor
+    SetClassLongA
+    SetCapture
+    SetActiveWindow
+    SendMessageA
+    ScrollWindow
+    ScreenToClient
+    RemovePropA
+    RemoveMenu
+    ReleaseDC
+    ReleaseCapture
+    RegisterWindowMessageA
+    RegisterClipboardFormatA
+    RegisterClassA
+    RedrawWindow
+    PtInRect
+    PostQuitMessage
+    PostMessageA
+    PeekMessageA
+    OffsetRect
+    OemToCharA
+    MsgWaitForMultipleObjects
+    MessageBoxA
+    MapWindowPoints
+    MapVirtualKeyA
+    LoadStringA
+    LoadKeyboardLayoutA
+    LoadIconA
+    LoadCursorA
+    LoadBitmapA
+    KillTimer
+    IsZoomed
+    IsWindowVisible
+    IsWindowEnabled
+    IsWindow
+    IsRectEmpty
+    IsIconic
+    IsDialogMessageA
+    IsChild
+    InvalidateRect
+    IntersectRect
+    InsertMenuItemA
+    InsertMenuA
+    InflateRect
+    GetWindowThreadProcessId
+    GetWindowTextA
+    GetWindowRect
+    GetWindowPlacement
+    GetWindowLongA
+    GetWindowDC
+    GetTopWindow
+    GetSystemMetrics
+    GetSystemMenu
+    GetSysColorBrush
+    GetSysColor
+    GetSubMenu
+    GetScrollRange
+    GetScrollPos
+    GetScrollInfo
+    GetPropA
+    GetParent
+    GetWindow
+    GetMenuStringA
+    GetMenuState
+    GetMenuItemInfoA
+    GetMenuItemID
+    GetMenuItemCount
+    GetMenu
+    GetLastActivePopup
+    GetKeyboardState
+    GetKeyboardLayoutList
+    GetKeyboardLayout
+    GetKeyState
+    GetKeyNameTextA
+    GetIconInfo
+    GetForegroundWindow
+    GetFocus
+    GetDesktopWindow
+    GetDCEx
+    GetDC
+    GetCursorPos
+    GetCursor
+    GetClientRect
+    GetClassNameA
+    GetClassInfoA
+    GetCapture
+    GetActiveWindow
+    FrameRect
+    FindWindowA
+    FillRect
+    EqualRect
+    EnumWindows
+    EnumThreadWindows
+    EndPaint
+    EnableWindow
+    EnableScrollBar
+    EnableMenuItem
+    DrawTextA
+    DrawMenuBar
+    DrawIconEx
+    DrawIcon
+    DrawFrameControl
+    DrawEdge
+    DispatchMessageA
+    DestroyWindow
+    DestroyMenu
+    DestroyIcon
+    DestroyCursor
+    DeleteMenu
+    DefWindowProcA
+    DefMDIChildProcA
+    DefFrameProcA
+    CreatePopupMenu
+    CreateMenu
+    CreateIcon
+    ClientToScreen
+    CheckMenuItem
+    CallWindowProcA
+    CallNextHookEx
+    BeginPaint
+    CharNextA
+    CharLowerA
+    CharUpperBuffA
+    CharToOemA
+    AdjustWindowRectEx
+    ActivateKeyboardLayout
+
+[user32.dll] (4)
+    GetKeyboardType
+    LoadStringA
+    MessageBoxA
+    CharNextA
+
+[version.dll] (3)
+    VerQueryValueA
+    GetFileVersionInfoSizeA
+    GetFileVersionInfoA

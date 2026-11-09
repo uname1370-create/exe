@@ -1,0 +1,18 @@
+Cheat Name: Elementary Hack v2.1
+
+Aimbot    : Yes
+ESP Box   : Yes
+Sound ESP : NO
+Panic Key : {F8}
+Menu Key  : Insert
+
+* You can use SoundESP on Wallhack protected servers
+
+1. Run Magic-sXe
+2. Run ALoader.exe
+3. Run Game and join to server
+
+
+Home : http://magic-sxe.blogspot.com
+Email: magic.sxe@gmail.com
+
